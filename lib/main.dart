@@ -1,23 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:login_flow_flutter/app.dart';
+import 'package:login_flow_flutter/src/authentication_repository.dart';
+import 'package:login_flow_flutter/user_repository.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Scaffold(
-        body: Center(
-          child: Text("Nguyen Cao Thiem"),
-        ),
-      ),
-    );
-  }
+  runApp(App(
+    authenticationRepository: AuthenticationRepository(),
+    userRepository: UserRepository(),
+  ));
 }
