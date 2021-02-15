@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_flow_flutter/authentication_repository.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    authentication();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -22,9 +20,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-}
-
-void authentication() {
-  final authenticationRepository = AuthenticationRepository();
-  authenticationRepository.status.listen(print);
 }
