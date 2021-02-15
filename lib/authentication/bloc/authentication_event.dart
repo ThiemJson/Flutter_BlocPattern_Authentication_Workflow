@@ -1,5 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:login_flow_flutter/src/authentication_repository.dart';
+part of 'authentication_bloc.dart';
 
 abstract class AuthenticationEvent extends Equatable {
   const AuthenticationEvent();

@@ -1,11 +1,13 @@
 import 'dart:async';
-
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:login_flow_flutter/authentication/bloc/authentication_event.dart';
-import 'package:login_flow_flutter/authentication/bloc/authentication_state.dart';
 import 'package:login_flow_flutter/src/authentication_repository.dart';
 import 'package:login_flow_flutter/user_repository.dart';
+import 'package:equatable/equatable.dart';
+import 'package:login_flow_flutter/authentication_repository.dart';
+import 'package:login_flow_flutter/src/models/model.dart';
+part 'authentication_event.dart';
+part 'authentication_state.dart';
 
 class AuthenticationBloc
     extends Bloc<AuthenticationEvent, AuthenticationState> {

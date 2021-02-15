@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:login_flow_flutter/authentication_repository.dart';
-import 'package:login_flow_flutter/src/models/model.dart';
+part of 'authentication_bloc.dart';
 
 class AuthenticationState extends Equatable {
   final AuthenticationStatus status;
